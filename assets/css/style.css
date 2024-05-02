@@ -455,7 +455,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-2.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -745,15 +745,15 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
-  background-size: cover;
+  background: url("../img/hero-2.jpg") center center;
+  background-size: contain;
   position: relative;
   padding: 80px 0;
 }
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: #F7E293;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -768,7 +768,7 @@ section {
 
 .about .about-img img {
   max-width: 100%;
-  border: 4px solid rgba(255, 255, 255, 0.2);
+  border: 4px solid #2A9C9D;
   position: relative;
 }
 
@@ -968,8 +968,9 @@ section {
   color: #cda45e;
 }
 
+
 .menu .menu-content span {
-  background: #1a1814;
+  background: #141a18;
   position: relative;
   z-index: 3;
   padding: 0 10px;
