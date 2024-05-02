@@ -206,7 +206,7 @@ h6 {
 /* Estilo para los botones de navegación */
 .nav-btn {
   padding: 10px 30px; /* Tamaño del botón */
-  background-color: rgba(0, 0, 0, 0.555); /* Fondo con transparencia */
+  background-color: #2a9c9d; /* Fondo con transparencia */
   color: #fff; /* Color del texto */
   border: none; /* Sin borde para un aspecto más limpio */
   border-radius: 30px; /* Borde redondeado */
