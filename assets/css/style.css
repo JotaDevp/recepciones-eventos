@@ -203,6 +203,34 @@ h6 {
   max-height: 40px;
 }
 
+/* Estilo para los botones de navegación */
+.nav-btn {
+  padding: 10px 30px; /* Tamaño del botón */
+  background-color: rgba(0, 0, 0, 0.555); /* Fondo con transparencia */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde para un aspecto más limpio */
+  border-radius: 30px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 400; /* Grosor del texto */
+  transition: background-color 0.3s, color 0.5s; /* Transición para efectos de hover */
+  cursor: pointer; /* Cambiar a puntero para indicar que es interactivo */
+}
+
+.nav-btn:hover {
+  background-color: #cda45e; /* Color de fondo en hover */
+  color: #fff; /* Color del texto en hover */
+}
+
+.nav-btn:focus {
+  outline: none; /* Remover el borde de foco por accesibilidad */
+}
+
+/* Ajuste para el menú en dispositivos móviles */
+.bi-list {
+  font-size: 24px;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
@@ -1001,7 +1029,7 @@ section {
   border: 0;
   padding: 12px 15px;
   transition: 0.3s;
-  color: #fff;
+  color: #bab3a6;
   border-radius: 0;
   border-right: 2px solid #cda45e;
   font-weight: 600;
@@ -1052,7 +1080,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/gallery/salones.webp) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1266,7 +1294,8 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgb(39, 221, 212);
 }
 
 .testimonials .testimonial-item h3 {
@@ -1305,7 +1334,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #26231d;
+  background: #d3af71;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1325,7 +1354,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #cda45e;
+  background-color: #dd0101;
 }
 
 /*--------------------------------------------------------------
@@ -1619,17 +1648,17 @@ section {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 24px; /* Aumentar el tamaño del ícono */
   display: inline-block;
   background: #28251f;
   color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
+  line-height: 1.2; /* Ajustar la altura de línea */
+  padding: 12px 0; /* Aumentar el padding para dar más espacio */
+  margin-right: 6px;
+  border-radius: 50%; /* Mantener la forma circular */
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 48px; /* Aumentar el ancho para mantener el círculo */
+  height: 48px; /* Aumentar la altura para mantener el círculo */
   transition: 0.3s;
 }
 

@@ -278,3 +278,16 @@
   });
 
 })()
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navButtons = document.querySelectorAll('.nav-btn.scrollto');
+
+  navButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const target = this.getAttribute('data-target');
+      if (target) {
+        window.location.hash = target; 
+      }
+    });
+  });
+});
