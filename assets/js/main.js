@@ -1,10 +1,4 @@
-/**
-* Template Name: Restaurantly
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -13,13 +7,18 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
+    if (!el) {
+      throw new Error('Elemento no definido'); // Manejo de error cuando el valor es undefined o null
     }
-  }
+    
+    el = el.trim(); // Aplicar .trim() solo si el valor es válido
+    
+    if (all) {
+      return [...document.querySelectorAll(el)];
+    } else {
+      return document.querySelector(el);
+    }
+  };
 
   /**
    * Easy event listener function
