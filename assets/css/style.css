@@ -1870,3 +1870,15 @@ section {
   font-weight: 700; /* Negrita para los nombres */
   color: #2a9c9d; /* Color distintivo para los nombres */
 }
+
+/* Estilo para el guion blanco */
+.footer-team p::before {
+  content: "-"; /* Agrega el guion antes de cada párrafo */
+  color: white; /* Define el color del guion */
+  padding: 0 5px; /* Añade espacio alrededor del guion */
+}
+
+.white-dash {
+  color: white; /* Define el color blanco para el guion */
+  padding: 0 5px; /* Espacio para el guion */
+}
