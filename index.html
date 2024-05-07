@@ -4,17 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Carlos Eventos & Recepciones</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Eventos y Recepciones de Carlos, servicio de alta calidad para eventos especiales." name="description">
+  <meta content="eventos, recepciones, alquileres, servicios" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon-16x16.png" rel="icon">
+  <link href="assets/img/favicon-16x16.png" rel="icon" type="image/png">
   <link href="assets/img/favicon-32x32.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -28,6 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- JavaScript con defer -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +38,6 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top d-flex align-items-center">
   <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
     <h1 class="logo me-auto me-lg-0"><a href="index.html">EVENTOS & RECEPCIONES</a></h1>
 
     <nav id="navbar" class="navbar order-last order-lg-0">
@@ -62,16 +64,76 @@
         <li>
           <button class="nav-btn scrollto" data-target="#contact">Contáctenos</button>
         </li>
+        <!-- Botón de pago PSE -->
+        <li>
+          <button class="nav-btn-pse" onclick="openPaymentModal()">Pagar PSE</button>
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
+
     <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Realiza una Cotización</a>
     
     <div class="header-logo">
       <img src="assets/img/favicon-32x32.png" alt="Logo de la Empresa" class="img-fluid">
     </div>
-
   </div>
+</header><!-- End Header -->
+
+<!-- Modal de Pago -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePaymentModal()">&times;</span>
+    <h2>Pago PSE</h2>
+    <form>
+      <div class="form-group">
+        <label for="firstName">Nombres:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Apellidos:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="bank">Banco:</label>
+        <input type="text" id="bank" name="bank" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Valor a pagar:</label>
+        <input type="text" id="amount" name="amount" required>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="makePayment()">PAGAR</button>
+        <button type="button" onclick="closePaymentModal()">Atrás</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- JavaScript para manejar el modal y el pago -->
+<script>
+  function openPaymentModal() {
+    document.getElementById("paymentModal").style.display = "block";
+  }
+  
+  function closePaymentModal() {
+    document.getElementById("paymentModal").style.display = "none";
+  }
+  
+  function makePayment() {
+    alert("Pago Exitoso.");
+    closePaymentModal();
+  }
+  </script>
+
 </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->

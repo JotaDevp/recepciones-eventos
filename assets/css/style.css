@@ -232,6 +232,92 @@ h6 {
   color: #fff;
 }
 
+
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con más opacidad */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 30px; /* Más espacio interno para comodidad */
+  border-radius: 10px; /* Bordes redondeados para suavidad */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+  width: 40%; /* Reduce el ancho para una apariencia más moderna */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px; /* Tamaño más pequeño para mejor ajuste */
+  font-weight: bold;
+  cursor: pointer; /* Indicador de clic */
+}
+
+.close:hover,
+.close:focus {
+  color: #333; /* Color más oscuro al pasar el mouse */
+  text-decoration: none;
+}
+
+.form-group {
+  margin-bottom: 10px; /* Espacio entre campos del formulario */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio entre etiqueta y campo */
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Más relleno para comodidad */
+  border: 1px solid #ccc; /* Borde más suave */
+  border-radius: 5px; /* Bordes redondeados para suavidad */
+}
+
+.modal-footer {
+  text-align: center; /* Centra el contenido */
+}
+
+.modal-footer button {
+  background-color: #008cba; /* Color azul para el botón */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espacio interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Indicador de clic */
+  margin: 10px; /* Espacio entre botones */
+}
+
+.modal-footer button:hover {
+  background-color: #005f8a; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+/* Estilo personalizado para el botón de PSE */
+.nav-btn-pse {
+  background-color: #0073e6; /* Color azul para el botón de PSE */
+  color: white; /* Texto blanco */
+  padding: 10px 15px; /* Espacio interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Indicador de clic */
+}
+
+.nav-btn-pse:hover {
+  background-color: #005bb5; /* Color más oscuro al pasar el mouse */
+}
+
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
@@ -276,10 +362,12 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar li {
   position: relative;
+  margin-right: 10px;
 }
 
 .navbar a,
