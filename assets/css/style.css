@@ -1850,3 +1850,23 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.footer-team {
+  text-align: center; /* Centra el contenido */
+  padding-top: 20px; /* Añade espacio en la parte superior */
+}
+
+.footer-team h4 {
+  font-weight: 600; /* Negrita para el título */
+  color: #cda45e; /* Color dorado para el título */
+}
+
+.footer-team p {
+  font-size: 14px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+.footer-team p strong {
+  font-weight: 700; /* Negrita para los nombres */
+  color: #2a9c9d; /* Color distintivo para los nombres */
+}
